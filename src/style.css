@@ -1,0 +1,60 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  padding: 2%;
+}
+
+main {
+  display: flex;
+  padding: 0 4%;
+  gap: 10%;
+}
+
+.left-section, .right-section{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.left-section .top{
+  display: flex;
+  gap: 10px;
+}
+
+.left-section .top h2, .right-section .top h2{
+  padding: 0;
+  margin: 0;
+}
+
+.left-section .top button {
+  width: max-content;
+  height: max-content;
+  padding: 5px;
+  background: #fff;
+}
+
+.left-section .bottom {
+  border: 1px solid black;
+  min-height: 50px;
+  margin: 0;
+  padding: 0;
+}
+
+.right-section form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.right-section form button {
+  display: flex;
+  align-self: flex-end;
+  width: max-content;
+  height: max-content;
+  padding: 5px;
+  background: #fff;
+}
