@@ -1,12 +1,6 @@
 import './style.css';
-import addScores from '../modules/add.js';
 import  {addScore, getScores} from '../modules/api.js';
-
-
-document.addEventListener('DOMContentLoaded', () => {
-  getScores
-  addScores();
-});
+import populateScores from '../modules/store.js';
 
 const form = document.querySelector('.add-score');
 
@@ -18,12 +12,24 @@ const addScoreToApi = () => {
   }
 }
 
-form.addEventListener('click', (e) => {
+document.addEventListener('DOMContentLoaded', () => {
+  populateScores();
+});
+
+document.addEventListener('click', (e) => {
   if (e.target.className === 'submit') {
     e.preventDefault();
     addScoreToApi();
+  } else if(e.target.className === 'refresh') {
+    let lists = document.querySelector('.left-section .bottom');
+    while(lists.firstChild) {
+      lists.removeChild(lists.firstChild);
+    }
+    populateScores()
   }
 })
+
+
 
 
 

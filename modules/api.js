@@ -22,7 +22,6 @@ export const getScores = async () => {
 
 export const addScore = async (user, score) => {
   const data = {user, score};
-  console.log(data);
   const result = await fetch(`${baseURL}/games/IgBV42X3Jq6LAdKKU95r/scores`, {
     method: 'POST', 
     headers: {
