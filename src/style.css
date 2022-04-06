@@ -1,0 +1,82 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  padding: 2%;
+}
+
+main {
+  display: flex;
+  padding: 0 4%;
+  gap: 10%;
+}
+
+.left-section,
+.right-section {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.left-section .top {
+  display: flex;
+  gap: 10px;
+}
+
+.left-section .top h2,
+.right-section .top h2 {
+  padding: 0;
+  margin: 0;
+}
+
+.right-section form button {
+  display: flex;
+  align-self: flex-end;
+  width: max-content;
+  height: max-content;
+  padding: 5px;
+  background: #fff;
+  border: 2px solid #000;
+}
+
+.left-section .top button {
+  width: max-content;
+  height: max-content;
+  padding: 5px;
+  background: #fff;
+  border: 2px solid #000;
+}
+
+.left-section .bottom {
+  border: 2px solid #000;
+  min-height: 50px;
+  margin: 0;
+  padding: 0;
+}
+
+.left-section .bottom .list-item {
+  list-style: none;
+  padding: 2%;
+}
+
+.left-section .bottom .list-item:nth-child(even) {
+  background: lightgrey;
+}
+
+.right-section form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.right-section form input {
+  border: 2px solid #000;
+  padding: 2%;
+}
+
+.right-section form input::placeholder {
+  color: #000;
+}
