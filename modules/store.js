@@ -1,9 +1,9 @@
-import {getScores} from "./api.js";
+import { getScores } from './api.js';
 
 const lists = document.querySelector('.left-section .bottom');
 
 const populateScores = async () => {
-  let newScore = await getScores();
+  const newScore = await getScores();
   newScore.result.forEach((score) => {
     const list = document.createElement('li');
     list.className = 'list-item';
