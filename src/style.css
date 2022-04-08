@@ -83,6 +83,10 @@ main {
   background: #f5f3f3;
 }
 
+.right-section .top {
+  padding: 2%;
+}
+
 .right-section form {
   display: flex;
   flex-direction: column;
