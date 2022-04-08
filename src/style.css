@@ -8,9 +8,14 @@ header {
   padding: 2%;
 }
 
+header h1 {
+  color: #45b0ee;
+  font-size: 48px;
+}
 main {
   display: flex;
   padding: 0 4%;
+  justify-content: space-evenly;
   gap: 10%;
 }
 
@@ -19,17 +24,23 @@ main {
   display: flex;
   flex-direction: column;
   gap: 30px;
+  width: 50%;
 }
 
 .left-section .top {
   display: flex;
   gap: 10px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2%;
 }
 
 .left-section .top h2,
 .right-section .top h2 {
   padding: 0;
   margin: 0;
+  font-size: 28px;
+  color: #45b0ee;
 }
 
 .right-section form button {
@@ -39,7 +50,8 @@ main {
   height: max-content;
   padding: 5px;
   background: #fff;
-  border: 2px solid #000;
+  border: 2px solid #45b0ee;
+  color: #45b0ee;
 }
 
 .left-section .top button {
@@ -47,23 +59,28 @@ main {
   height: max-content;
   padding: 5px;
   background: #fff;
-  border: 2px solid #000;
+  border: 2px solid #45b0ee;
+  color: #45b0ee;
 }
 
 .left-section .bottom {
-  border: 2px solid #000;
+  border: 2px solid  #45b0ee;
   min-height: 50px;
   margin: 0;
   padding: 0;
+  font-size: 18px;
+  color: #45b0ee;
 }
 
 .left-section .bottom .list-item {
+  display: flex;
+  justify-content: space-between;
   list-style: none;
-  padding: 2%;
+  padding: 2% 5%;
 }
 
 .left-section .bottom .list-item:nth-child(even) {
-  background: lightgrey;
+  background: #f5f3f3;
 }
 
 .right-section form {
@@ -73,10 +90,10 @@ main {
 }
 
 .right-section form input {
-  border: 2px solid #000;
+  border: 2px solid #45b0ee;
   padding: 2%;
 }
 
 .right-section form input::placeholder {
-  color: #000;
+  color: #45b0ee;
 }
